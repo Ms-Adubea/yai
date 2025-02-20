@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative bg-green-600">
+    <div id="hero" className="relative bg-green-600 pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-20 md:py-28">
           <motion.div 
