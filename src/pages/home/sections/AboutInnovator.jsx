@@ -81,7 +81,7 @@ const AboutInnovator = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.img
-              src="/src/assets/images/img1.png"
+              src="/public/images/img1.png"
               alt="Founder"
               className="w-full h-auto object-contain rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}

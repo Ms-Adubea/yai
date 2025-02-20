@@ -63,17 +63,17 @@ const Showcase = () => {
             {
               name: 'Professional Kitchen Model',
               description: 'High-capacity slicing for commercial kitchens and restaurants',
-              image: '/src/assets/images/fruit.jpg'
+              image: '/public/images/fruit.jpg'
             },
             {
               name: 'Home Kitchen Model',
               description: 'Compact and efficient design perfect for home use',
-              image: '/src/assets/images/groceries.jpg'
+              image: '/public/images/groceries.jpg'
             },
             {
               name: 'Multiple Blade Options',
               description: 'Various blade attachments for different cutting styles',
-              image: '/src/assets/images/img2.jpg'
+              image: '/public/images/img2.jpg'
             }
           ].map((product, index) => (
             <motion.div
