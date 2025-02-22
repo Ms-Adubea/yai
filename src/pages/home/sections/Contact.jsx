@@ -46,13 +46,13 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-16 bg-white">
+    <div id="contact" className="py-16 bg-[#FFF3E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="lg:text-center">
-            <h2 className="text-base text-green-600 font-semibold tracking-wide uppercase">Contact Us</h2>
+            <h2 className="text-base text-[#B87333] font-semibold tracking-wide uppercase">Contact Us</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Get Your VeggiSlice Pro
+              Get Your GingerSlice Pro
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Interested in transforming your kitchen workflow? Reach out to us today.
@@ -88,7 +88,7 @@ const Contact = () => {
                       type={field.type}
                       name={field.label.toLowerCase()}
                       id={field.label.toLowerCase()}
-                      className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="shadow-sm focus:ring-[#CD7F32] focus:border-[#CD7F32] block w-full sm:text-sm border-gray-300 rounded-md"
                       placeholder={field.placeholder}
                       whileFocus={{ scale: 1.02 }}
                       transition={{ type: "spring", stiffness: 300 }}
@@ -111,7 +111,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                    className="shadow-sm focus:ring-[#CD7F32] focus:border-[#CD7F32] block w-full sm:text-sm border-gray-300 rounded-md"
                     placeholder="Tell us about your needs"
                     whileFocus={{ scale: 1.02 }}
                     transition={{ type: "spring", stiffness: 300 }}
@@ -121,7 +121,7 @@ const Contact = () => {
 
               <motion.button
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#CD7F32] hover:bg-[#B87333] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#CD7F32]"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400 }}
@@ -144,17 +144,17 @@ const Contact = () => {
                 <div className="mt-6 space-y-6">
                   {[
                     { 
-                      icon: <FiPhone className="h-6 w-6 text-green-500" />,
+                      icon: <FiPhone className="h-6 w-6 text-[#CD7F32]" />,
                       title: "+233 XX XXX XXXX",
                       subtitle: "Mon-Fri, 9AM-5PM GMT"
                     },
                     {
-                      icon: <FiMail className="h-6 w-6 text-green-500" />,
+                      icon: <FiMail className="h-6 w-6 text-[#CD7F32]" />,
                       title: "contact@veggieslicepro.com",
                       subtitle: "We'll respond within 24 hours"
                     },
                     {
-                      icon: <FiMapPin className="h-6 w-6 text-green-500" />,
+                      icon: <FiMapPin className="h-6 w-6 text-[#CD7F32]" />,
                       title: "Sankor",
                       subtitle: "Central Region, Ghana"
                     }

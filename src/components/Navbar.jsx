@@ -33,10 +33,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-green-600 text-white fixed w-full z-50">
+    <nav className="bg-[#CD7F32] text-white fixed w-full z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <h1 className="text-2xl font-bold">VeggiSlice Pro</h1>
+          <h1 className="text-2xl font-bold">GingerSlice Pro</h1>
           
           {/* Mobile menu button */}
           <button 
@@ -49,32 +49,32 @@ const Navbar = () => {
           {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8">
             <li>
-              <button onClick={() => scrollToSection('hero')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('hero')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaHome className="mr-1"/> Home
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('product')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('product')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaCog className="mr-1"/> Product
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('innovator')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('innovator')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaInfoCircle className="mr-1"/> Innovator
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('showcase')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('showcase')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaCog className="mr-1"/> Showcase
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('resources')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('resources')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaBook className="mr-1"/> Resources
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('contact')} className="flex items-center hover:text-green-200">
+              <button onClick={() => scrollToSection('contact')} className="flex items-center hover:text-[#FFF3E0]">
                 <FaEnvelope className="mr-1"/> Contact
               </button>
             </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('hero')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaHome className="mr-1"/> Home
                   </button>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('product')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaCog className="mr-1"/> Product
                   </button>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('innovator')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaInfoCircle className="mr-1"/> Innovator
                   </button>
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('showcase')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaCog className="mr-1"/> Showcase
                   </button>
@@ -127,7 +127,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('resources')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaBook className="mr-1"/> Resources
                   </button>
@@ -135,7 +135,7 @@ const Navbar = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('contact')}
-                    className="flex items-center hover:text-green-200"
+                    className="flex items-center hover:text-[#FFF3E0]"
                   >
                     <FaEnvelope className="mr-1"/> Contact
                   </button>

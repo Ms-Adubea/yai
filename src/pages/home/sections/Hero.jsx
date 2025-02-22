@@ -4,11 +4,26 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div id="hero" className="relative bg-green-600 pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-20 md:py-28">
+    <div id="hero" className="relative pt-16 overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 bg-[#CD7F32] opacity-20 z-10"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/gin-vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="py-20 md:py-28 flex flex-col md:flex-row items-center justify-between">
+          {/* Text Content */}
           <motion.div 
-            className="text-center"
+            className="text-left md:w-1/2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -19,52 +34,64 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <motion.span className="block">Revolutionize Your</motion.span>
+              <motion.span className="block">Transform Your</motion.span>
               <motion.span 
-                className="block text-green-200"
+                className="block text-[#FFF3E0]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Kitchen Experience
+                Ginger Processing
               </motion.span>
             </motion.h1>
             <motion.p 
-              className="mt-3 max-w-md mx-auto text-base text-green-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+              className="mt-3 max-w-md text-base text-white sm:text-lg md:mt-5 md:text-xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Introducing the innovative Vegetable Slicer Machine - designed for efficiency, 
-              precision, and consistency in both home and commercial kitchens.
+              Experience precision and efficiency with our innovative Ginger Slicer Machine - 
+              designed for both home and commercial kitchens.
             </motion.p>
             <motion.div 
-              className="mt-10 sm:flex sm:justify-center"
+              className="mt-10 flex flex-col sm:flex-row sm:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <div className="rounded-md shadow">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link
-                    to="/contact"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-                  >
-                    Order Now
-                  </Link>
-                </motion.div>
-              </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Link
-                    to="/about-product"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
-                  >
-                    Learn More
-                  </Link>
-                </motion.div>
-              </div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/contact"
+                  className="w-full mb-4 sm:mb-0 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-[#CD7F32] bg-[#FFF3E0] hover:bg-white md:py-4 md:text-lg md:px-10"
+                >
+                  Order Now
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to="/about-product"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-[#FFF3E0] text-base font-medium rounded-md text-white hover:bg-[#B87333] md:py-4 md:text-lg md:px-10"
+                >
+                  Learn More
+                </Link>
+              </motion.div>
             </motion.div>
+          </motion.div>
+
+          {/* Right Side Image */}
+          <motion.div 
+            className="hidden md:block md:w-1/2 pl-10"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <motion.img
+              src="/images/img1.png"
+              alt="Ginger Slicer Machine"
+              className="w-full h-auto rounded-lg shadow-2xl"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            />
           </motion.div>
         </div>
       </div>

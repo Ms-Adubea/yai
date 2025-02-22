@@ -38,16 +38,16 @@ const Showcase = () => {
   };
 
   return (
-    <div id="showcase" className="py-16 bg-gray-50">
+    <div id="showcase" className="py-16 bg-[#FFF3E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="lg:text-center">
-            <h2 className="text-base text-green-600 font-semibold tracking-wide uppercase">Product Showcase</h2>
+            <h2 className="text-base text-[#B87333] font-semibold tracking-wide uppercase">Product Showcase</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              VeggiSlice Pro in Action
+              GingerSlice Pro in Action
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              See how our innovative vegetable slicer transforms kitchen workflows
+              See how our innovative ginger slicer transforms kitchen workflows
             </p>
           </div>
         </AnimatedSection>
@@ -112,7 +112,7 @@ const Showcase = () => {
                 >
                   <motion.a 
                     href="#contact" 
-                    className="text-green-600 hover:text-green-800 font-medium inline-flex items-center"
+                    className="text-[#CD7F32] hover:text-[#B87333] font-medium inline-flex items-center"
                     whileHover={{ x: 5 }}
                     transition={{ type: "spring", stiffness: 400 }}
                   >

@@ -20,16 +20,16 @@ const AboutProduct = () => {
     //   <p className="mt-2 text-gray-700">Our product is designed to solve real-world problems with cutting-edge technology.</p>
     // </div>
 
-    <div id="product" className="py-16 bg-white">
+    <div id="product" className="py-16 bg-[#FFF3E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="lg:text-center">
-            <h2 className="text-base text-green-600 font-semibold tracking-wide uppercase">Features</h2>
+            <h2 className="text-base text-[#B87333] font-semibold tracking-wide uppercase">Features</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Vegetable Slicer Machine
+              Ginger Slicer Machine
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              A versatile solution for efficient and uniform vegetable slicing
+              A specialized solution for efficient and uniform ginger slicing
             </p>
           </div>
         </AnimatedSection>
@@ -40,32 +40,32 @@ const AboutProduct = () => {
               {
                 name: 'Adjustable Blades',
                 description: 'Multiple thickness settings for various slicing styles and preferences.',
-                icon: <FaCog className="h-8 w-8 text-green-500" />
+                icon: <FaCog className="h-8 w-8 text-[#CD7F32]" />
               },
               {
                 name: 'Time-Saving',
                 description: 'Significantly reduces food preparation time compared to manual slicing.',
-                icon: <FaClock className="h-8 w-8 text-green-500" />
+                icon: <FaClock className="h-8 w-8 text-[#CD7F32]" />
               },
               {
                 name: 'Consistent Results',
                 description: 'Uniform slices every time, ensuring professional presentation.',
-                icon: <FaLeaf className="h-8 w-8 text-green-500" />
+                icon: <FaLeaf className="h-8 w-8 text-[#CD7F32]" />
               },
               {
                 name: 'Easy Maintenance',
                 description: 'Quick and simple cleaning process for maximum efficiency.',
-                icon: <FaTools className="h-8 w-8 text-green-500" />
+                icon: <FaTools className="h-8 w-8 text-[#CD7F32]" />
               },
               {
                 name: 'Home Kitchen Use',
                 description: 'Perfect for domestic kitchens and family meal preparation.',
-                icon: <FaHome className="h-8 w-8 text-green-500" />
+                icon: <FaHome className="h-8 w-8 text-[#CD7F32]" />
               },
               {
                 name: 'Commercial Grade',
                 description: 'Durable design suitable for restaurant and industrial use.',
-                icon: <FaIndustry className="h-8 w-8 text-green-500" />
+                icon: <FaIndustry className="h-8 w-8 text-[#CD7F32]" />
               }
             ].map((feature, index) => (
               <motion.div

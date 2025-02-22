@@ -61,11 +61,11 @@ import AnimatedSection from '../../../components/AnimatedSection';
 
 const AboutInnovator = () => {
   return (
-    <div id="innovator" className="py-16 bg-gray-50">
+    <div id="innovator" className="py-16 bg-[#FFF3E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="lg:text-center">
-            <h2 className="text-base text-green-600 font-semibold tracking-wide uppercase">Our Story</h2>
+            <h2 className="text-base text-[#B87333] font-semibold tracking-wide uppercase">Our Story</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Meet Our Innovator
             </p>
@@ -136,7 +136,7 @@ const AboutInnovator = () => {
                 <motion.a 
                   key={index}
                   href={social.link} 
-                  className="text-gray-400 hover:text-green-500"
+                  className="text-gray-400 hover:text-[#CD7F32]"
                   whileHover={{ scale: 1.2, rotate: 360 }}
                   transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 >

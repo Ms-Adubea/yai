@@ -9,13 +9,13 @@ const Resources = () => {
   };
 
   return (
-    <div id="resources" className="py-16 bg-gray-50">
+    <div id="resources" className="py-16 bg-[#FFF3E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="lg:text-center">
-            <h2 className="text-base text-green-600 font-semibold tracking-wide uppercase">Resources</h2>
+            <h2 className="text-base text-[#B87333] font-semibold tracking-wide uppercase">Resources</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Learn More About VeggiSlice Pro
+              Learn More About GingerSlice Pro
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Everything you need to know about using and maintaining your vegetable slicer
@@ -29,25 +29,25 @@ const Resources = () => {
               {
                 name: 'User Manual',
                 description: 'Detailed instructions for assembly, operation, and maintenance of your VeggiSlice Pro.',
-                icon: <FaBook className="h-8 w-8 text-green-500" />,
+                icon: <FaBook className="h-8 w-8 text-[#CD7F32]" />,
                 link: '#'
               },
               {
                 name: 'Video Tutorials',
                 description: 'Watch step-by-step guides on how to use different blade attachments and cleaning procedures.',
-                icon: <FaVideo className="h-8 w-8 text-green-500" />,
+                icon: <FaVideo className="h-8 w-8 text-[#CD7F32]" />,
                 link: '#'
               },
               {
                 name: 'Recipe Book',
                 description: "Discover creative recipes that make the most of your VeggiSlice Pro's capabilities.",
-                icon: <FaFileAlt className="h-8 w-8 text-green-500" />,
+                icon: <FaFileAlt className="h-8 w-8 text-[#CD7F32]" />,
                 link: '#'
               },
               {
                 name: 'FAQs',
                 description: 'Find answers to common questions about usage, maintenance, and troubleshooting.',
-                icon: <FaQuestionCircle className="h-8 w-8 text-green-500" />,
+                icon: <FaQuestionCircle className="h-8 w-8 text-[#CD7F32]" />,
                 link: '#'
               }
             ].map((resource, index) => (
@@ -77,7 +77,7 @@ const Resources = () => {
                     </p>
                     <motion.a 
                       href={resource.link} 
-                      className="mt-3 inline-flex items-center text-green-600 hover:text-green-800"
+                      className="mt-3 inline-flex items-center text-[#CD7F32] hover:text-[#B87333]"
                       whileHover={{ x: 5 }}
                       transition={{ type: "spring", stiffness: 400 }}
                     >
